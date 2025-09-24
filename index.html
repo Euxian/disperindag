@@ -105,9 +105,9 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-green-900 text-white py-6 text-center">
-    <p>&copy; 2025 Dinas Perindustrian dan Perdagangan Kabupaten Karawang. Semua Hak Dilindungi.</p>
-  </footer>
+ <footer class="bg-green-900 text-white py-6 text-center">
+  <p>&copy; <span id="year"></span> Dinas Perindustrian dan Perdagangan Kabupaten Karawang. Semua Hak Dilindungi.</p>
+</footer>
 
   <!-- Script Hamburger Menu -->
   <script>
@@ -117,6 +117,8 @@
     menuBtn.addEventListener('click', () => {
       menu.classList.toggle('hidden');
     });
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
   </script>
 
 </body>
